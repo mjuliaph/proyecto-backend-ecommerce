@@ -69,28 +69,31 @@ class ProductManager{
     }
 }
 
-const producto1 = new ProductManager();
+// const producto1 = new ProductManager();
 
-const testProduct = {
-    title:"libro 1",
-    description: "Sinopsis 1",
-    price: 1500,
-    thumbnail: "foto 1",
-    code: 2030,
-    stock: 3
-}
+// const testProduct = {
+//     title:"libro 1",
+//     description: "Sinopsis 1",
+//     price: 1500,
+//     thumbnail: "foto 1",
+//     code: 2030,
+//     stock: 3
+// }
 
-producto1.addProduct(testProduct);
+// producto1.addProduct(testProduct);
 
-const testProduct2 = {
-    title:"libro 2",
-    description: "Sinopsis 2",
-    price: 1500,
-    thumbnail: "foto 2",
-    code: 2030,
-    stock: 8
-}
+// const testProduct2 = {
+//     title:"libro 2",
+//     description: "Sinopsis 2",
+//     price: 1500,
+//     thumbnail: "foto 2",
+//     code: 2030,
+//     stock: 8
+// }
 
-producto1.addProduct(testProduct2);
+// producto1.addProduct(testProduct2);
 
-console.log(producto1.getProduct());
+// console.log(producto1.getProduct());
+
+
+export default ProductManager;

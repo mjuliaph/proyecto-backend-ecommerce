@@ -1,16 +1,55 @@
-import fs from 'fs';
+import express, { response } from "express";
+import ProductManager from "../products/ProductManager.js";
 
-const context = async() => {
-    try {
-        const content = await fs.promises.readFile('./package.json');
-        const object = JSON.parse(content);
-        console.log(object);
-    } catch (error) {
-        
+
+const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+
+
+
+
+app.get('/products', (req, res) => {
+    const limit = request.query
+
+    if (!limit) {
+        return response.status(200).send(products);
     }
-}
+})
 
-context();
+
+
+// get.get('/products/:pid', (req, res) => {
+    
+// })
+
+
+
+app.listen(8080, () => console.log("servidor escuchando desde el puerto 8080!"));
+
+
+
+
+
+
+
+
+
+
+
+// const context = async() => {
+//     try {
+//         const content = await fs.promises.readFile('./package.json');
+//         const object = JSON.parse(content);
+//         console.log(object);
+//     } catch (error) {
+        
+//     }
+// }
+
+// context();
 
 // class ProductManager{
 //     constructor() {
